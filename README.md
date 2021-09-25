@@ -21,12 +21,23 @@ Task 1
 Class name: com.epam.rd.java.basic.practice4.Part1
 The input data should be uploaded from the 'part1.txt' file
 
+Имя класса: com.epam.rd.java.basic.practice4.Part1
+Входные данные должны быть загружены из файла 'part1.txt'
+
 ———————————————————————————————-
 
 
 Create a class that displays the content of the text file to console, deleting the first two characters of each word with the length of 4 and more characters (example: original 'qwerty', new 'erty').
 The size of the file should not be more than 1Kb (several lines are enough).
 A 'word' should be considered a continuous sequence of Cyrillic or Latin characters.
+
+Создайте класс, который отображает содержимое текстового файла на консоли,
+удаляя первые два символа каждого слова длиной 4 и более символов
+(пример: исходный «qwerty», новый «erty»).
+
+Размер файла не должен превышать 1Кб (достаточно нескольких строк).
+
+«Слово» следует рассматривать как непрерывную последовательность кириллических или латинских символов.
 
 _______________________
 

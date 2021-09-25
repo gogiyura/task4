@@ -50,3 +50,7 @@ buildNumber.properties
 
 ### Gradle ###
 build/
+
+Part1.txt
+
+/newDir
