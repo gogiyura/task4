@@ -2,8 +2,7 @@ package com.epam.rd.java.basic.practice4;
 
 
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 
 public class Demo {

@@ -6,8 +6,7 @@ import org.junit.Test;
 public class Part1Test {
     @Test
     public void testInputProcessing() {
-        String res = Part1.inputProcessing("qwerty");
-        Assert.assertTrue(res.equals("erty"));
-
+        Assert.assertTrue(Part1.inputProcessing("qwerty").equals("erty"));
+        Assert.assertFalse(Part1.inputProcessing("rty").equals("y"));
     }
 }
