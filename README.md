@@ -12,6 +12,14 @@ Notes.
 5. Make sure to check the project build logs (Jenkins), the output should coincide with the output on your local computer.
 6. When displaying information, use a platform independent line terminator, otherwise if to try running the application using another OS, you might not see what you expect.
 
+
+Примечания.
+1. Если приложение считывает данные из файла, вам необходимо указать ту же кодировку, в которой хранятся данные. Используйте кодировку Ср1251.
+2. Если язык текстовой информации специально не указан, выберите текст, который может содержать как кириллицу (русский и украинский), так и латинские буквы (английский).
+3. Создайте в корневом пакете Demo класс, демонстрирующий действия всех написанных функций.
+4. Имена входных и выходных файлов относятся к значению системного свойства user.dir (= корневой каталог проекта).
+5. Обязательно проверьте журналы сборки проекта (Jenkins), вывод должен совпадать с выводом на вашем локальном компьютере.
+6. При отображении информации используйте терминатор строки, независимый от платформы, иначе, если вы попытаетесь запустить приложение в другой ОС, вы можете не увидеть то, что ожидаете.
 _______________________
 
 Task 1
@@ -131,16 +139,17 @@ The input data should be uploaded from the 'part4.txt' file
 
 Create a class that implements interface java.lang.Iterable<String>. The class should parse the text file and return sentences. The method 'iterator' of the given class should return the iterator object - an instance of the inner class. The method Iterator#remove should throw an exception UnsupportedOperationException.
 
+You are not allowed to use the existing implementations of the iterators from the container classes!
+
+Note. Write a regular expression that 'cuts' sentences from the text, then use the Matcher object when implementing the methods of the Iterator interface.
+
+
 Создайте класс, реализующий интерфейс java.lang.Iterable <String>.
 Класс должен проанализировать текстовый файл и вернуть предложения.
 Метод итератора данного класса должен возвращать объект итератора - экземпляр внутреннего класса.
 Метод Iterator # remove должен вызывать исключение UnsupportedOperationException.
 
-You are not allowed to use the existing implementations of the iterators from the container classes!
-
 Вам не разрешается использовать существующие реализации итераторов из контейнерных классов!
-
-Note. Write a regular expression that 'cuts' sentences from the text, then use the Matcher object when implementing the methods of the Iterator interface.
 
 Примечание. Напишите регулярное выражение, которое «вырезает» предложения из текста,
 а затем используйте объект Matcher при реализации методов интерфейса Iterator.
@@ -193,11 +202,11 @@ apple = яблоко
 Write a class that in a loop reads the key and the localization name from the console and, in response, prints out the corresponding value to the console. The sign of the input end is the word 'stop'.
 
 Напишите класс, который в цикле считывает ключ и имя локализации с консоли
-и в ответ выводит соответствующее значение в минусы.
+и в ответ выводит соответствующее значение в консоль.
 
 Reading from console and writing to console are required!
 
-Reading from console and writing to console are required!
+Чтение с консоли и запись в консоль обязательны!
 
 _______________________
 

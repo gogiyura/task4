@@ -52,5 +52,8 @@ buildNumber.properties
 build/
 
 Part1.txt
+part2_sorted.txt
+part3.txt
+Part2.txt
 
 /newDir

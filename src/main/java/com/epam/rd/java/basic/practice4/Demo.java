@@ -1,7 +1,5 @@
 package com.epam.rd.java.basic.practice4;
 
-
-
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 

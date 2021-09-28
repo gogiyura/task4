@@ -1,6 +1,5 @@
 package com.epam.rd.java.basic.practice4;
 
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
@@ -26,7 +25,6 @@ public class Part1 {
                 sb.append(scanner.nextLine()).append(System.lineSeparator());
             }
             scanner.close();
-            return sb.toString().trim();
         } catch (IOException ex) {
             LOGGER.log(Level.SEVERE,
                     "exception caught", ex);
